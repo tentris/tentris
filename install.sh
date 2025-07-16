@@ -25,7 +25,7 @@ if fuzzy_eq "${ARCH}" "arm64" || fuzzy_eq "${ARCH}" "aarch64"; then
 elif fuzzy_eq "${ARCH}" "x86_64" || fuzzy_eq "${ARCH}" "x86-64"; then
     ARCH="x86_64"
 else
-    echo "Unknown architecture"
+    echo "Unknown architecture ${ARCH}" >&2
     exit 1
 fi
 
@@ -35,7 +35,7 @@ if fuzzy_eq "${OS}" "linux"; then
 elif fuzzy_eq "${OS}" "darwin"; then
     OS="darwin"
 else
-    echo "Unknown operating system"
+    echo "Unknown operating system ${OS}" >&2
     exit 1
 fi
 
