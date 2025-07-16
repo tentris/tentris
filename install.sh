@@ -55,4 +55,4 @@ curl --proto https --tlsv1.2 -L -o "tentris.tar.gz" "${DOWNLOAD_URL}"
 
 tar xf "tentris.tar.gz"
 
-bash ./install.sh
+sh ./install.sh
