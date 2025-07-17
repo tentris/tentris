@@ -5,7 +5,7 @@ set -eu
 
 ask_remove_database() {
     while true; do
-        read -p "Do you also want to remove the database files at /var/local/tentris? [Y/N] " action
+        read -p "Do you also want to remove the database files at /var/local/tentris? [Y/N] " action < /dev/tty
         case "$action" in
             [yY]*)
                 sudo rm -rf /var/local/tentris || true
@@ -20,7 +20,7 @@ ask_remove_database() {
 
 ask_remove_config_files() {
     while true; do
-        read -p "Do you also want to remove the config files at /etc/tentris.d? [Y/N] " action
+        read -p "Do you also want to remove the config files at /etc/tentris.d? [Y/N] " action < /dev/tty
         case "$action" in
             [yY]*)
                 sudo rm -rf /etc/tentris.d || true
@@ -34,7 +34,7 @@ ask_remove_config_files() {
 }
 
 while true; do
-    read -p "Are you sure you want to uninstall tentris and all its accompanying files? [Y/N] " action
+    read -p "Are you sure you want to uninstall tentris and all its accompanying files? [Y/N] " action < /dev/tty
 
     case "$action" in
         [yY]*)
