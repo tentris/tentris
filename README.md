@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Tentris Logo" src="logo/logo.svg" width="100">
+  <img alt="Tentris Logo" src="logo/logo-no-text.svg" width="100">
 </div>
 
 ## Tentris
@@ -12,8 +12,6 @@ implements the [SPARQL query language](https://www.w3.org/TR/2013/REC-sparql11-q
 Tentris can be used via its [CLI application](https://docs.tentris.io/running_with_binaries.html),
 its [Python bindings](https://docs.tentris.io/running_with_python.html)
 and [docker](https://docs.tentris.io/running_with_docker.html).
-
-> **Note:** Tentris is currently in BETA.
 
 ## Getting Started
 
