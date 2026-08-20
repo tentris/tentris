@@ -44,7 +44,7 @@ REPO="https://github.com/tentris/tentris"
 LATEST_RELEASE_PAGE="$(curl --proto https --tlsv1.2 -Ls -o /dev/null -w "%{url_effective}" "${REPO}/releases/latest")"
 LATEST_RELEASE_VER="${LATEST_RELEASE_PAGE##*/}"
 
-DOWNLOAD_URL="${REPO}/releases/download/${LATEST_RELEASE_VER}/tentris-${LATEST_RELEASE_VER}-beta-${ARCH}-${OS}.tar.gz"
+DOWNLOAD_URL="${REPO}/releases/download/${LATEST_RELEASE_VER}/tentris-${LATEST_RELEASE_VER}-${ARCH}-${OS}.tar.gz"
 
 TMPDIR="$(mktemp -d)"
 trap cleanup EXIT
